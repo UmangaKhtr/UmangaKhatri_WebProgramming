@@ -3,22 +3,32 @@
 <html>
 <head>
     <title>Zer0ne - CRM and ERP</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
-    <div>
+    <!-- Header Section -->
+    <div class="header">
         <h2>◈ Zer0ne</h2>
 
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Solutions</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-        <button>Book a Demo</button>
+        <!-- Navigation Elements -->
+        <div class="navigation" id="navigation">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Solutions</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
     </div>
 
-    <div>
+    <!-- Main Heading Section -->
+    <div class="hero">
         <h1>Manage Your Entire<br>Business in One Place</h1>
 
         <p>
@@ -29,7 +39,7 @@
         <button>Get Started</button>
         <button>Learn More</button>
 
-        <div>
+        <div class="dashboard">
             <h3>Dashboard Preview</h3>
 
             <table>
@@ -47,7 +57,8 @@
         </div>
     </div>
 
-    <div>
+    <!-- Features Section -->
+    <div class="features">
         <h2>Powerful Features for a Smarter Business</h2>
 
         <p>One connected platform for your customers, teams, and operations.</p>
@@ -72,7 +83,8 @@
         </table>
     </div>
 
-    <div>
+    <!-- Solutions Section -->
+    <div class="solutions">
         <h2>A Unified Platform for<br>Every Part of Your Business</h2>
 
         <p>
@@ -81,24 +93,23 @@
         </p>
 
         <button>Learn More</button>
-
-        <div>
-            <h3>Dashboard Preview</h3>
-
-            <table>
-                <tr>
-                    <td>Menu</td>
-                    <td>Sales</td>
-                    <td>Customers</td>
-                    <td>Inventory</td>
-                </tr>
-                <tr>
-                    <td>Dashboard</td>
-                    <td colspan="3">Sales overview / chart</td>
-                </tr>
-            </table>
-        </div>
     </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h2>◈ Zer0ne</h2>
+
+        <p>Connecting customers, teams, and business operations.</p>
+
+        <p>© 2026 Zer0ne. All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navigation").classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>

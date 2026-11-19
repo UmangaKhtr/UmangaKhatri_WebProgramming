@@ -1,0 +1,201 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+
+.header {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header h2 {
+    color: #4cc9f0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.navigation a:hover {
+    color: #4cc9f0;
+}
+
+
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+
+.hero {
+    background-color: #e8f4fc;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #14213d;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.dashboard {
+    background-color: white;
+    padding: 25px;
+    margin: 35px auto;
+    max-width: 700px;
+    border: 1px solid #ddd;
+}
+
+.dashboard h3 {
+    color: #0077b6;
+}
+
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+
+.features {
+    background-color: white;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.features h2 {
+    color: #14213d;
+}
+
+.features table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.features td {
+    background-color: #f1f6fa;
+    padding: 25px;
+    border: 10px solid white;
+    text-align: center;
+}
+
+.features h3 {
+    color: #0077b6;
+}
+
+
+.solutions {
+    background-color: #e8f4fc;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.solutions h2 {
+    color: #14213d;
+    font-size: 30px;
+}
+
+
+.footer {
+    background-color: #14213d;
+    color: white;  
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h2 {
+    color: #4cc9f0;
+}
+navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hamburger Button */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsive Navigation */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    /* Display Hamburger */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide Navigation Initially */
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background-color: white;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+    /* Display Navigation on Click */
+    .navigation.active {
+        display: flex;
+    }
+}
